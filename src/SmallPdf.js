@@ -1,15 +1,15 @@
 import React from 'react';
 
-class PdfTool extends React.Component {
+class SmallPdf extends React.Component {
     render() {
 
-        const { heading, description } = this.props.product
+        const { heading, description,img } = this.props.smallPdf
         return ( 
-            <div className = "pdf-item" style = { styles.pdfItem } >
+            <div className = "smallPdf-item" style = { styles.pdfItem } >
 
 
                     <div className = "left-block" >
-                    <img / >
+                    <img src={img} style={styles.img} / >
                     
                     </div> 
                     <div className = "right1-block" >
@@ -17,9 +17,7 @@ class PdfTool extends React.Component {
                         <div style = { styles.description } > { description } </div>
                     </div> 
 
-                    <div className = "right2-block" >
-                    &lt; 
-                    </div>
+                    
 
             </div>
         )
@@ -31,18 +29,23 @@ class PdfTool extends React.Component {
 const styles = {
     pdfItem: {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         justifyContent: 'space-between',
 
     },
     heading: {
-        fontSize: '.9rem',
+        fontSize: '1.4rem',
         fontWeight: 'bold'
     },
     description: {
-        fontSize: '.8rem',
+        fontSize: '1.1rem',
+        textAlign:'justify'
 
+    },
+    img:{
+        width:70,
+        height:140
     }
 }
 
-export default PdfTool;
+export default SmallPdf;

@@ -1,11 +1,12 @@
-/* body {
+*{
   margin: 0;
+  padding:0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-} */
+}
 
 
 /* header  css*/
@@ -39,6 +40,8 @@
     min-height: calc(100vh-60px);
     max-width: 1500px;
     padding: 20px;
+    position:relative;
+    top:-40px!important;
 }
 
 .messagecontainer {
@@ -49,6 +52,11 @@
 .imagecontainer {
     width: 700px;
 }
+.imagecontainer img{
+    width:600px;
+    height:700px;
+}
+
 
 .mainButton1 {
     margin-right: 20px;
@@ -87,11 +95,154 @@ p {
 /* simpleTaskSection css */
 
 .simpleTaskSection .labelSection {
-    width: 700px;
+    max-width: 700px;
     margin: auto;
     min-height: 200px;
+    
 }
 
 .simpleTaskSection .labelSection p {
     text-align: justify;
+}
+.simpleTaskSection .simpleTaskItem{
+    min-height: calc(100vh-60px);
+    max-width: 1200px;
+    padding: 20px;
+    margin:auto;
+    position:relative;
+    top:-60px;
+
+}
+.simpleTaskItem > .task-item:nth-child(2n+1){  
+    flex-direction:row-reverse!important;   
+}
+.simpleTaskSection .task-item{
+    max-width: 1200px;
+    min-height: 400px;
+    /* background-color: #f2f2f2;     */
+    margin-top:20px;
+}
+.task-item .left-block{
+    width:650px;
+    
+}
+.task-item .right-block{
+    width:400px;
+    
+    
+}
+
+/* smallPdf section css */
+
+.smallPdfItemSection {
+    max-width: 1200px;
+    /* background-color:red; */
+    min-height: 400px;
+    margin: auto;
+    position:relative;
+    top:-10px;
+}
+
+.smallPdfItemSection .smallPdf-item {
+    width: 350px;
+    height: 250px;
+    /* background-color: #f2f2f2; */
+    margin: 25px;
+    /* border: 1px solid white; */
+   
+    /* box-shadow: 1px 1px 1px 0px; */
+}
+
+.freeSmallPdfSection{
+    background-image:url('https://smallpdf.com/build/1e0f0635cc65e92456044bd63d970b0a.svg');
+    max-width:1150px;
+    min-height:400px;
+    margin:auto;
+    overflow:hidden
+}
+.detailSection{
+    max-width:700px;
+    min-height:400px;
+    /* background-color:red; */
+}
+
+/* footer section css */
+.footerNav{
+    max-width:1500px;
+    min-height:300px;
+    /* background-color:red; */
+    margin:auto;
+}
+.upperSection{
+    width:1400px;
+    min-height:200px;
+    /* background-color:yellow; */
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.upperSection>div{
+    max-width:650px;
+    min-height:190px;
+    /* background-color:red; */
+    padding-left:20px;
+    
+}
+.upperSection .lastdiv{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+.upperSection .lastdiv div{
+    width:150px;
+    min-height:180px;
+    /* background-color:black;  */
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    
+    
+}
+.upperSection .lastdiv div label:first-child{
+    font-weight:bold
+}
+.upperSection .lastdiv div label{
+    margin-top:10px;
+}
+
+.lowerSection{
+    width:100vw;
+    min-height:80px;
+    /* background-color:grey; */
+    
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:space-between;
+}
+.lowerSection label{
+    /* line-height:80px; */
+    padding-left:25px;
+    font-size:1.1rem;
+    position:relative;
+    top:40px;
+}
+
+
+
+
+.lowerSection>div{
+    width:650px;
+    min-height:80px;
+    /* background-color:yellow; */
+    
+}
+@media screen and (max-width:600px){
+    .imagecontainer img{
+            width:400px;
+            height:600px;
+        }
 }
