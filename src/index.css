@@ -1,13 +1,97 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+} */
+
+
+/* header  css*/
+
+.navContainer {
+    width: 100vw;
+    height: 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logoContainer {
+    width: 60vw;
+}
+
+.linkContainer {
+    min-width: 25vw;
+}
+
+.linkContainer span {
+    margin-right: 5px;
+}
+
+.linkContainer .btn-dark {
+    border-radius: 40%;
+    font-size: .6rem;
+}
+
+
+/* mainSection css */
+
+.mainSection {
+    min-height: calc(100vh-60px);
+    max-width: 1500px;
+    padding: 20px;
+}
+
+.messagecontainer {
+    width: 500px;
+    /* margin-left:30px; */
+}
+
+.imagecontainer {
+    width: 700px;
+}
+
+.mainButton1 {
+    margin-right: 20px;
+}
+
+
+/* pdfToolSection css */
+
+.labelSection h1,
+p {
+    text-align: center
+}
+
+.pdfItemSection {
+    max-width: 1000px;
+    /* background-color:red; */
+    min-height: 400px;
+    margin: auto;
+}
+
+.pdfItemSection .pdf-item {
+    width: 280px;
+    height: 150px;
+    background-color: #f2f2f2;
+    margin: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 0px;
+}
+
+.pdfItemSection .pdf-item:hover {
+    background-color: white;
+}
+
+
+/* simpleTaskSection css */
+
+.simpleTaskSection .labelSection {
+    width: 700px;
+    margin: auto;
+    min-height: 200px;
+}
+
+.simpleTaskSection .labelSection p {
+    text-align: justify;
 }
